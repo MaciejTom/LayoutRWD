@@ -1,0 +1,27 @@
+@mixin centerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin spaceEvenlyVertically {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+@mixin button($paddingX, $paddingY, $color, $radius) {
+  padding: $paddingY $paddingX;
+  background: $color;
+  border-radius: $radius;
+}
+
+@mixin action-button($shadowColor) {
+  box-shadow: 5px 10px 14px $shadowColor;
+}
+a {
+  text-decoration: none;
+}
+.content-box {
+  margin: 0 auto;
+  max-width: 1352px;
+}

@@ -1,0 +1,109 @@
+.pricing {
+  @include centerSection;
+  margin-top: 100px;
+  margin-bottom: 155px;
+  h2 {
+    font-size: 2.25rem;
+    font-family: $main-font;
+    color: $black;
+  }
+  .cards {
+    @include spaceEvenlyVertically;
+    align-items: center;
+    margin-top: 71px;
+    .card {
+      @include centerSection;
+      border: 1px solid;
+      border-radius: 18px;
+      padding: 25px 124px;
+      position: relative;
+      &:nth-child(1) {
+        border-color: $red;
+        .card-price {
+          padding-bottom: 77px;
+        }
+      }
+      &:nth-child(2) {
+
+        border-color: $blue;
+        padding: 35px 143px;
+        box-shadow: 5px 10px 27px #07ace629;
+        .card-price {
+          padding-top: 10px;
+          padding-bottom: 5px;
+        }
+        span {
+          padding-top: 10px;
+          padding-bottom: 61px;
+        }
+      }
+      &:nth-child(3) {
+        border-color: $turquoise;
+        span {
+          padding-top: 10px;
+          padding-bottom: 50px;
+        }
+        .card-price {
+          padding-bottom: 5px;
+        }
+      }
+    }
+    .card-title {
+      padding: 34px 0 14px;
+      font-size: 1.25rem;
+      font-family: $main-font;
+      font-weight: bold;
+      color: #13253b;
+      position: relative;
+    }
+    .card-price {
+      font-family: $secondary-font;
+      font-size: 2.875rem;
+      font-weight: 300;
+    }
+    span {
+      font-size: 0.75rem;
+      font-weight: bold;
+      font-family: $main-font;
+      color: #13253b;
+    }
+    .button {
+      @include button(57px, 16px, $red, 23px);
+      color: $white;
+      position: absolute;
+      bottom: -5%;
+    }
+    .second {
+      background: $blue;
+      @include action-button(#07ace629);
+    }
+    .third {
+      background: $turquoise;
+    }
+    .basic {
+      color: $red;
+    }
+    .pro {
+      color: $blue;
+    }
+    .premium {
+      color: $turquoise;
+    }
+    .card-features {
+      padding-bottom: 71px;
+      font-size: 0.875rem;
+      text-align: center;
+
+      li {
+        img {
+          padding-right: 10px;
+          vertical-align: baseline;
+        }
+      }
+
+      li:not(:last-child) {
+        padding-bottom: 20px;
+      }
+    }
+  }
+}

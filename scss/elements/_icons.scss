@@ -1,0 +1,68 @@
+.icons {
+  margin-bottom: 120px;
+  @include centerSection;
+  h2 {
+    font-size: 2.25rem;
+    line-height: 42px;
+    font-family: $main-font;
+    color: $black;
+    margin-bottom: 100px;
+  }
+  .icons-info-box {
+    @include spaceEvenlyVertically;
+    align-items: baseline;
+    .icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      &:nth-child(1)::before {
+        content: '';
+        width: 62.7px;
+        height: 62.7px;
+        border-radius: 50%;
+        background: $red;
+        position: absolute;
+      }
+      &:nth-child(2)::before {
+        content: '';
+        width: 63px;
+        height: 63px;
+        border-radius: 50%;
+        background: $blue;
+        position: absolute;
+        top: -10%;
+      }
+      &:nth-child(3)::before {
+        content: '';
+        width: 62.7px;
+        height: 62.7px;
+        border-radius: 50%;
+        background: $turquoise;
+        position: absolute;
+        top: -5%;
+      }
+      img {
+        margin-bottom: 23px;
+        padding-left: 2.5rem;
+        z-index: 2;
+      }
+      .icons-title {
+        font-size: 1.25rem;
+        font-family: $main-font;
+        font-weight: 800;
+        letter-spacing: 5.96px;
+        margin-bottom: 19px;
+        line-height: 24px;
+      }
+      .icons-subtitle {
+        font-size: 1.0625rem;
+        font-family: $main-font;
+        color: $grey-light;
+        max-width: 8rem;
+        text-align: center;
+        line-height: 20px;
+      }
+    }
+  }
+}

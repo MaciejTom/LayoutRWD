@@ -1,0 +1,29 @@
+.page-footer {
+  background: #f7f7f7;
+  box-shadow: 0px -5px 40px #00000029;
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .footer-info {
+      padding: 24.48px 0 17px 0;
+      .logo {
+        font-size: 1.625em;
+        font-family: $main-font;
+        font-weight: 300;
+        color: $blue;
+        line-height: 30px;
+      }
+      .copyright {
+        font-size: 0.6875rem;
+        font-family: $secondary-font;
+        color: $grey-light;
+        line-height: 15px;
+      }
+    }
+
+    img {
+      padding: 0 0 0 20px;
+    }
+  }
+}

@@ -1,0 +1,127 @@
+.form {
+  @include spaceEvenlyVertically;
+  justify-content: center;
+  margin-bottom: 80px;
+  .questions {
+    margin-right: 114px;
+    h2 {
+      font-size: 3.0625rem;
+      font-family: $main-font;
+      line-height: 57px;
+      margin-bottom: 22px;
+    }
+    p:nth-child(2) {
+      font-size: 1rem;
+      font-family: $secondary-font;
+      line-height: 22px;
+      margin-bottom: 40px;
+    }
+    .contact-info {
+      display: flex;
+      p {
+        font-size: 1rem;
+        font-family: $secondary-font;
+        color: $grey-light;
+        line-height: 22px;
+        font-weight: 600px;
+        padding-right: 20px;
+      }
+      img {
+        padding-right: 10px;
+      }
+    }
+  }
+  form {
+    max-width: 33%;
+    position: relative;
+    label {
+      font-size: 0.6875rem;
+      color: $blue;
+      font-family: $secondary-font;
+      line-height: 15px;
+      letter-spacing: 3.28px;
+      font-weight: bold;
+    }
+    .consent {
+      display: flex;
+      position: relative;
+      padding-left: 41px;
+      flex-direction: row-reverse;
+      font-size: 0.75rem;
+      font-weight: normal;
+      color: $grey-dark;
+      line-height: 17px;
+      letter-spacing: 0;
+      & input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+        &:checked ~ .checkmark:after {
+          display: block;
+        }
+      }
+      & .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 24px;
+        width: 24px;
+        background-color: $white;
+        border: 1px solid $grey-mid;
+        border-radius: 4px;
+        &:hover {
+          background-color: $grey-mid;
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          display: none;
+          left: 9px;
+          top: 5px;
+          width: 5px;
+          height: 10px;
+          border: solid $blue;
+          border-width: 0 3px 3px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+      }
+    }
+    input {
+      display: block;
+      border: 0;
+      border-bottom: 1px solid black;
+
+      &[type='text'],
+      &[type='email'] {
+        padding: 15px 0;
+        width: 100%;
+      }
+      &[type='text'] {
+        margin-bottom: 43px;
+      }
+      &[type='email'] {
+        margin-bottom: 30px;
+      }
+
+      &.consent-box {
+        margin-right: 15px;
+      }
+    }
+  }
+  .send-button {
+    @include button(97px, 20px, $blue, 35px);
+    @include action-button(#07ace629);
+    color: $white;
+    font-size: 0.8125rem;
+    font-family: $secondary-font;
+    font-weight: bold;
+    line-height: 18px;
+    position: relative;
+    top: 20px;
+    left: 50%;
+  }
+}

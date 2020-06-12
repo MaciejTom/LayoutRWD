@@ -1,0 +1,36 @@
+.banner {
+  background-image: url(../assets/Background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 529px;
+  width: 100vw;
+}
+
+.sellMore {
+  margin-bottom: 100px;
+  @include centerSection;
+  h1 {
+    font-size: 3.0625rem;
+    font-family: $main-font;
+    line-height: 57px;
+    color: $black;
+    padding-bottom: 20px;
+  }
+  p {
+    font-size: 1rem;
+    font-family: $secondary-font;
+    line-height: 22px;
+    color: $black;
+    padding-bottom: 38px;
+  }
+  a.button {
+    font-size: 1rem;
+    font-family: $secondary-font;
+    line-height: 22px;
+    font-weight: bold;
+    color: $white;
+    @include button(157px, 22px, $blue, 40px);
+    @include action-button(#07ace629);
+  }
+}

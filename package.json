@@ -1,0 +1,16 @@
+{
+  "name": "Best-shop",
+  "version": "1.0.0",
+  "description": "The layout of an example store page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maciej Tomaszewicz",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}
