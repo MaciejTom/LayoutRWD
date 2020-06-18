@@ -5,6 +5,13 @@
   background-position: center;
   height: 529px;
   width: 100vw;
+  @media #{$tablet} {
+    background-size: cover;
+
+}
+  @media #{$tablet} {
+height: 350px;
+  }
 }
 
 .sellMore {
@@ -23,6 +30,7 @@
     line-height: 22px;
     color: $black;
     padding-bottom: 38px;
+    text-align: center;
   }
   a.button {
     font-size: 1rem;
@@ -32,5 +40,8 @@
     color: $white;
     @include button(157px, 22px, $blue, 40px);
     @include action-button(#07ace629);
+    @media #{$mobile} {
+      padding: 22px 80px;
+    }
   }
 }

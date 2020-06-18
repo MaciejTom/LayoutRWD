@@ -7,7 +7,7 @@
 @mixin spaceEvenlyVertically {
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
+
 }
 @mixin button($paddingX, $paddingY, $color, $radius) {
   padding: $paddingY $paddingX;
@@ -24,4 +24,5 @@ a {
 .content-box {
   margin: 0 auto;
   max-width: 1352px;
+
 }

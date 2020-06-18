@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Shop</title>
     <link
       href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,800&display=swap"
@@ -18,7 +19,12 @@
     <header class="page-header">
       <section class="content-box page-header__nav">
         <a class="logo" href="#">BestShop</a>
-        <nav>
+        <button class="hamburger">
+          <span class="hamburger__box">
+            <span class="hamburger__inner"></span>
+          </span>
+        </button>
+        <nav class="nav">
           <ul class="nav-list">
             <li><a class="nav-button" href="#">why us</a></li>
             <li><a class="nav-button" href="#">benefits</a></li>
@@ -102,119 +108,111 @@
         </div>
       </section>
 
-
-        <section class="content-box pricing">
-          <h2>Pricing</h2>
-          <div class="cards">
-            <div class="card">
-              <p class="card-title">Basic</p>
-              <p class="card-price basic">$0</p>
-              <ul class="card-features">
-                <li>
-                  <img src="assets/Ckechmark-1.svg" alt="checkmark" />MB HDD
-                </li>
-                <li>
-                  <img src="assets/Ckechmark-1.svg" alt="checkmark" />1
-                  Subdomain
-                </li>
-                <li>
-                  <img src="assets/Ckechmark-1.svg" alt="checkmark" />2 E-mails
-                </li>
-                <li>
-                  <img src="assets/Close.svg" alt="x mark" />Two years license
-                </li>
-                <li><img src="assets/Close.svg" alt="x mark" />Full support</li>
-              </ul>
-              <a href="#" class="button first">Begin</a>
-            </div>
-            <div class="card">
-              <p class="card-title">Professional</p>
-              <p class="card-price pro">$25</p>
-              <span>Limited offer</span>
-              <ul class="card-features">
-                <li>
-                  <img src="assets/Ckechmark-1.svg" alt="checkmark" />500 MB HDD
-                </li>
-                <li>
-                  <img src="assets/Ckechmark-1.svg" alt="checkmark" />2
-                  Subdomains
-                </li>
-                <li>
-                  <img src="assets/Ckechmark-1.svg" alt="checkmark" />5 E-mails
-                </li>
-                <li>
-                  <img src="assets/Ckechmark-1.svg" alt="checkmark" />One year
-                  license
-                </li>
-                <li><img src="assets/Close.svg" alt="x mark" />Full support</li>
-              </ul>
-              <a href="#" class="button second">Begin</a>
-            </div>
-            <div class="card">
-              <p class="card-title">Premium</p>
-              <p class="card-price premium">$60</p>
-              <span>Limited offer</span>
-              <ul class="card-features">
-                <li>
-                  <img src="assets/Ckechmark-1.svg" alt="checkmark" />2 GB HDD
-                </li>
-                <li>
-                  <img src="assets/Ckechmark-1.svg" alt="checkmark" />5
-                  Subdomains
-                </li>
-                <li>
-                  <img src="assets/Ckechmark-1.svg" alt="checkmark" />20 E-mails
-                </li>
-                <li>
-                  <img src="assets/Ckechmark-1.svg" alt="checkmark" />Two years
-                  license
-                </li>
-                <li>
-                  <img src="assets/Ckechmark-1.svg" alt="checkmark" />Full
-                  support
-                </li>
-              </ul>
-              <a href="#" class="button third">Begin</a>
-            </div>
+      <section class="content-box pricing">
+        <h2>Pricing</h2>
+        <div class="cards">
+          <div class="card">
+            <p class="card-title">Basic</p>
+            <p class="card-price basic">$0</p>
+            <ul class="card-features">
+              <li>
+                <img src="assets/Ckechmark-1.svg" alt="checkmark" />MB HDD
+              </li>
+              <li>
+                <img src="assets/Ckechmark-1.svg" alt="checkmark" />1 Subdomain
+              </li>
+              <li>
+                <img src="assets/Ckechmark-1.svg" alt="checkmark" />2 E-mails
+              </li>
+              <li>
+                <img src="assets/Close.svg" alt="x mark" />Two years license
+              </li>
+              <li><img src="assets/Close.svg" alt="x mark" />Full support</li>
+            </ul>
+            <a href="#" class="button first">Begin</a>
           </div>
-
+          <div class="card">
+            <p class="card-title">Professional</p>
+            <p class="card-price pro">$25</p>
+            <span>Limited offer</span>
+            <ul class="card-features">
+              <li>
+                <img src="assets/Ckechmark-1.svg" alt="checkmark" />500 MB HDD
+              </li>
+              <li>
+                <img src="assets/Ckechmark-1.svg" alt="checkmark" />2 Subdomains
+              </li>
+              <li>
+                <img src="assets/Ckechmark-1.svg" alt="checkmark" />5 E-mails
+              </li>
+              <li>
+                <img src="assets/Ckechmark-1.svg" alt="checkmark" />One year
+                license
+              </li>
+              <li><img src="assets/Close.svg" alt="x mark" />Full support</li>
+            </ul>
+            <a href="#" class="button second">Begin</a>
+          </div>
+          <div class="card">
+            <p class="card-title">Premium</p>
+            <p class="card-price premium">$60</p>
+            <span>Limited offer</span>
+            <ul class="card-features">
+              <li>
+                <img src="assets/Ckechmark-1.svg" alt="checkmark" />2 GB HDD
+              </li>
+              <li>
+                <img src="assets/Ckechmark-1.svg" alt="checkmark" />5 Subdomains
+              </li>
+              <li>
+                <img src="assets/Ckechmark-1.svg" alt="checkmark" />20 E-mails
+              </li>
+              <li>
+                <img src="assets/Ckechmark-1.svg" alt="checkmark" />Two years
+                license
+              </li>
+              <li>
+                <img src="assets/Ckechmark-1.svg" alt="checkmark" />Full support
+              </li>
+            </ul>
+            <a href="#" class="button third">Begin</a>
+          </div>
+        </div>
       </section>
 
-
-        <section class="content-box form">
-          <div class="questions">
-            <h2>Any questions?</h2>
-            <p>Leave your email address or call us!</p>
-            <div class="contact-info">
-              <p>
-                <img
-                  src="assets/Mail Icon.svg"
-                  alt="mail icon"
-                />info@beststop.xyz
-              </p>
-              <p>
-                <img src="assets/Phone Icon.svg" alt="phone icon" />123 456 789
-              </p>
-            </div>
+      <section class="content-box form">
+        <div class="questions">
+          <h2>Any questions?</h2>
+          <p>Leave your email address or call us!</p>
+          <div class="contact-info">
+            <p>
+              <img
+                src="assets/Mail Icon.svg"
+                alt="mail icon"
+              />info@beststop.xyz
+            </p>
+            <p>
+              <img src="assets/Phone Icon.svg" alt="phone icon" />123 456 789
+            </p>
           </div>
-          <form>
-            <label> NAME <input type="text" /> </label>
-            <label> EMAIL <input type="email" /> </label>
-            <label class="consent"
-              >I hereby give consent for my personal data included in my
-              application to be processed for the purposes of the recruitment
-              process under the European Parliament’s and Council of the
-              European Union Regulation on the Protection of Natural Persons as
-              of 27 April 2016, with regard to the processing of personal data
-              and on the free movement of such data, and repealing Directive
-              95/46/EC (Data Protection Directive)
-              <input class="consent-box" type="checkbox" checked />
-              <span class="checkmark"></span>
-            </label>
-            <input class="send-button" type="submit" value="Send" />
-          </form>
-        </section>
-
+        </div>
+        <form>
+          <label> NAME <input type="text" /> </label>
+          <label> EMAIL <input type="email" /> </label>
+          <label class="consent"
+            >I hereby give consent for my personal data included in my
+            application to be processed for the purposes of the recruitment
+            process under the European Parliament’s and Council of the European
+            Union Regulation on the Protection of Natural Persons as of 27 April
+            2016, with regard to the processing of personal data and on the free
+            movement of such data, and repealing Directive 95/46/EC (Data
+            Protection Directive)
+            <input class="consent-box" type="checkbox" checked />
+            <span class="checkmark"></span>
+          </label>
+          <input class="send-button" type="submit" value="Send" />
+        </form>
+      </section>
     </main>
     <div class="page-footer">
       <footer class="content-box footer">
@@ -229,4 +227,15 @@
       </footer>
     </div>
   </body>
+  <script>
+  const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('.nav');
+
+const handleClick = () => {
+  hamburger.classList.toggle('hamburger--active');
+  nav.classList.toggle('nav--active');
+}
+
+hamburger.addEventListener('click', handleClick);
+  </script>
 </html>
