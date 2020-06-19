@@ -3,31 +3,33 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 529px;
+  height: 33rem;
   width: 100vw;
   @media #{$tablet} {
     background-size: cover;
-
-}
+  }
   @media #{$tablet} {
-height: 350px;
+    height: 22rem;
   }
 }
 
 .sellMore {
-  margin-bottom: 100px;
-  @include centerSection;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 6.25rem;
+
   h1 {
     font-size: 3.0625rem;
     font-family: $main-font;
-    line-height: 57px;
+    line-height: 3.5rem;
     color: $black;
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
   }
   p {
     font-size: 1rem;
     font-family: $secondary-font;
-    line-height: 22px;
+    line-height: 1.375rem;
     color: $black;
     padding: 1rem 2rem 2rem 2rem;
     text-align: center;
@@ -35,13 +37,16 @@ height: 350px;
   a.button {
     font-size: 1rem;
     font-family: $secondary-font;
-    line-height: 22px;
+    line-height: 1.375rem;
     font-weight: bold;
     color: $white;
-    @include button(157px, 22px, $blue, 40px);
-    @include action-button(#07ace629);
+    padding: 1.375rem 9rem;
+    background: $blue;
+    border-radius: 2.5rem;
+
+    box-shadow: 0.3rem 0.625rem 0.875rem #07ace629;
     @media #{$mobile} {
-      padding: 22px 80px;
+      padding: 1.375rem 5rem;
     }
   }
 }

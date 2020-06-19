@@ -1,5 +1,5 @@
 .icons {
-  margin-bottom: 120px;
+  margin-bottom: 7.5rem;
   justify-content: space-between;
 text-align: center;
 @media #{$mobile} {
@@ -7,13 +7,15 @@ text-align: center;
 }
   h2 {
     font-size: 2.25rem;
-    line-height: 42px;
+    line-height: 2.625rem;
     font-family: $main-font;
     color: $black;
-    margin-bottom: 100px;
+    margin-bottom: 6.25rem;
+    padding: 0 1rem;
   }
   .icons-info-box {
-    @include spaceEvenlyVertically;
+    display: flex;
+    justify-content: space-evenly;
     align-items: baseline;
     @media #{$tablet} {
     justify-content: space-between;
@@ -34,16 +36,16 @@ text-align: center;
       }
       &:nth-child(1)::before {
         content: '';
-        width: 62.7px;
-        height: 62.7px;
+        width: 3.91875rem;
+        height: 3.91875rem;
         border-radius: 50%;
         background: $red;
         position: absolute;
       }
       &:nth-child(2)::before {
         content: '';
-        width: 63px;
-        height: 63px;
+        width: 3.9375rem;
+        height: 3.9375rem;
         border-radius: 50%;
         background: $blue;
         position: absolute;
@@ -54,8 +56,8 @@ text-align: center;
       }
       &:nth-child(3)::before {
         content: '';
-        width: 62.7px;
-        height: 62.7px;
+        width: 3.91875rem;
+        height: 3.91875rem;
         border-radius: 50%;
         background: $turquoise;
         position: absolute;
@@ -65,7 +67,7 @@ text-align: center;
         }
       }
       img {
-        margin-bottom: 23px;
+        margin-bottom: 1.4375rem;
         padding-left: 2.5rem;
         z-index: 2;
       }
@@ -73,9 +75,9 @@ text-align: center;
         font-size: 1.25rem;
         font-family: $main-font;
         font-weight: 800;
-        letter-spacing: 5.96px;
-        margin-bottom: 19px;
-        line-height: 24px;
+        letter-spacing: 0.3725rem;
+        margin-bottom: 1.1875rem;
+        line-height: 1.5rem;
       }
       .icons-subtitle {
         font-size: 1.0625rem;
@@ -83,7 +85,7 @@ text-align: center;
         color: $grey-light;
         max-width: 8rem;
         text-align: center;
-        line-height: 20px;
+        line-height: 1.25rem;
       }
     }
   }

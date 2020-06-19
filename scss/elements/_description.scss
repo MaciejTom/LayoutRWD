@@ -3,28 +3,30 @@
 }
 
 .description {
-  @include centerSection;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   overflow: hidden;
   .row {
     display: flex;
     justify-content: center;
     background: #fff;
     flex-direction: row;
-    border-radius: 5px;
-    border: 1px solid #e8e9ed;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid #e8e9ed;
     position: relative;
 
     &:nth-of-type(1) {
-      margin-top: 105px;
+      margin-top: 6.5625rem;
       @media #{$tablet} {
         flex-direction: column;
       }
 
       .feature-text {
-        padding-right: 170px;
-        padding-left: 35px;
-        padding-top: 91px;
-        padding-bottom: 141px;
+        padding-right: 10.625rem;
+        padding-left: 2.1875rem;
+        padding-top: 5.6875rem;
+        padding-bottom: 8.8125rem;
         bottom: 29%;
         left: 3%;
         @media #{$tablet} {
@@ -39,20 +41,20 @@
         h3 {
           font-size: 2.25rem;
           font-family: $main-font;
-          padding-bottom: 30px;
-          line-height: 42px;
+          padding-bottom: 1.875rem;
+          line-height: 2.625rem;
         }
         p {
           font-size: 1rem;
           font-family: $secondary-font;
-          line-height: 22px;
+          line-height: 1.375rem;
           position: relative;
 
           &::after {
             content: "";
             position: absolute;
-            width: 326px;
-            border-bottom: 4px solid $red;
+            width: 20.375rem;
+            border-bottom: 0.25rem solid $red;
             bottom: -3rem;
             left: 0;
             @media #{$tablet} {
@@ -62,8 +64,8 @@
         }
       }
       .feature-image {
-        padding-right: 117px;
-        padding-top: 113px;
+        padding-right: 7.3125rem;
+        padding-top: 7.0625rem;
         position: relative;
         z-index: 1;
         @media #{$mobile} {
@@ -78,10 +80,10 @@
 
         &::after {
           content: "";
-          width: 180px;
-          height: 180px;
+          width: 11.25rem;
+          height: 11.25rem;
           background-color: $red;
-          border-radius: 41px;
+          border-radius: 2.5625rem;
           position: absolute;
           bottom: 41%;
           right: 17%;
@@ -94,7 +96,7 @@
       }
     }
     &:nth-of-type(2) {
-      margin-top: 37px;
+      margin-top: 2.3125rem;
       flex-direction: row-reverse;
       justify-content: space-around;
 
@@ -102,8 +104,8 @@
         flex-direction: column;
       }
       .feature-image {
-        padding-left: 70px;
-        padding-top: 29px;
+        padding-left: 4.375rem;
+        padding-top: 1.8125rem;
         position: relative;
         z-index: 1;
 
@@ -111,19 +113,17 @@
           width: inherit;
           display: flex;
           justify-content: center;
-          padding-top: 40px;
+          padding-top: 2.5rem;
         }
         @media #{$mobile} {
           transform: scale(0.8);
           margin-left: 1rem;
           margin-right: 1rem;
-
-
         }
         &::after {
           content: "";
-          width: 300px;
-          height: 300px;
+          width: 18.75rem;
+          height: 18.75rem;
           border-radius: 50%;
           background-color: $blue;
           left: 3em;
@@ -141,10 +141,10 @@
         }
       }
       .feature-text {
-        padding-right: 20px;
-        padding-left: 192px;
-        padding-top: 69px;
-        padding-bottom: 121px;
+        padding-right: 1.25rem;
+        padding-left: 12rem;
+        padding-top: 4.3125rem;
+        padding-bottom: 7.5625rem;
         width: 37%;
         @media #{$tablet} {
           width: inherit;
@@ -152,6 +152,7 @@
           padding-top: 1.8rem;
           padding-left: 2rem;
         }
+
         @media #{$mobile} {
           padding-right: 7rem;
           padding-left: 7rem;
@@ -160,20 +161,20 @@
         h3 {
           font-size: 2.25rem;
           font-family: $main-font;
-          padding-bottom: 30px;
-          padding-right: 40px;
-          line-height: 42px;
+          padding-bottom: 1.875rem;
+          padding-right: 2.5rem;
+          line-height: 2.625rem;
         }
         p {
           font-size: 1rem;
           font-family: $secondary-font;
-          line-height: 22px;
+          line-height: 1.375rem;
           position: relative;
           &::after {
             content: "";
             position: absolute;
-            width: 326px;
-            border-bottom: 4px solid $blue;
+            width: 20.375rem;
+            border-bottom: 0.25rem solid $blue;
             bottom: -3rem;
             left: 0%;
             @media #{$tablet} {
@@ -186,8 +187,8 @@
     &:nth-of-type(3) {
       border: none;
       background: #f7f7f7;
-      margin-top: 37px;
-      margin-bottom: 105px;
+      margin-top: 2.3125rem;
+      margin-bottom: 6.5625rem;
       @media #{$tablet} {
         display: flex;
         flex-direction: column;
@@ -195,12 +196,12 @@
       @media #{$mobile} {
       }
       .feature-image {
-        padding-left: 62.31px;
-        padding-right: 81.87px;
-        padding-top: 98.21px;
-        padding-bottom: 64.07px;
-        border-radius: 5px;
-        border: 1px solid #e8e9ed;
+        padding-left: 3.894375rem;
+        padding-right: 5.116875rem;
+        padding-top: 6.138125rem;
+        padding-bottom: 4.004375rem;
+        border-radius: 0.3125rem;
+        border: 0.0625rem solid #e8e9ed;
         background: $turquoise;
         @media #{$tablet} {
           display: flex;
@@ -216,13 +217,13 @@
         }
       }
       .feature-text {
-        padding-right: 34.04px;
-        padding-left: 35px;
-        padding-top: 69px;
-        padding-bottom: 114.67px;
-        border-radius: 5px;
-        border: 1px solid #e8e9ed;
-        margin-right: 70px;
+        padding-right: 2.1275rem;
+        padding-left: 2.1875rem;
+        padding-top: 4.3125rem;
+        padding-bottom: 7.166875rem;
+        border-radius: 0.3125rem;
+        border: 0.0625rem solid #e8e9ed;
+        margin-right: 4.375rem;
         background: $white;
         @media #{$tablet} {
           margin-right: 0;
@@ -230,20 +231,20 @@
         h3 {
           font-size: 2.25rem;
           font-family: $main-font;
-          padding-bottom: 30px;
-          padding-right: 40px;
-          line-height: 42px;
+          padding-bottom: 1.875rem;
+          padding-right: 2.5rem;
+          line-height: 2.625rem;
         }
         p {
           font-size: 1rem;
           font-family: $secondary-font;
-          line-height: 22px;
+          line-height: 1.375rem;
           position: relative;
           &::after {
             content: "";
             position: absolute;
-            width: 326px;
-            border-bottom: 4px solid $blue;
+            width: 20.375rem;
+            border-bottom: 0.25rem solid $blue;
             bottom: -90%;
             left: 0%;
             @media #{$tablet} {
@@ -257,18 +258,18 @@
 }
 
 .mac {
-  width: 386px;
-  height: 219px;
+  width: 24.125rem;
+  height: 13.6875rem;
   z-index: 1;
   position: relative;
 }
 .phone {
-  width: 426px;
-  height: 328px;
+  width: 26.625rem;
+  height: 20.5rem;
   z-index: 1;
   position: relative;
 }
 .trumpet {
-  width: 296px;
-  height: 208px;
+  width: 18.5rem;
+  height: 13rem;
 }
