@@ -1,14 +1,35 @@
 .form {
-  
+  display: flex;
   justify-content: center;
   margin-bottom: 80px;
+  @media #{$tablet} {
+    flex-direction: column;
+    align-items: center;
+    transform: scale(1.1);
+    margin-top: 2rem;
+  }
+  @media #{$mobile} {
+    transform: scale(1);
+    margin-top: 4rem;
+  }
   .questions {
     margin-right: 114px;
+    @media #{$tablet} {
+      flex-direction: column;
+      align-items: center;
+      margin-right: 0;
+    }
+    @media #{$mobile} {
+      text-align: center;
+    }
     h2 {
       font-size: 3.0625rem;
       font-family: $main-font;
       line-height: 57px;
       margin-bottom: 22px;
+      @media #{$mobile} {
+        font-size: 2.5rem;
+      }
     }
     p:nth-child(2) {
       font-size: 1rem;
@@ -18,6 +39,7 @@
     }
     .contact-info {
       display: flex;
+      flex-direction: column;
       p {
         font-size: 1rem;
         font-family: $secondary-font;
@@ -25,6 +47,7 @@
         line-height: 22px;
         font-weight: 600px;
         padding-right: 20px;
+        padding-bottom: 1rem;
       }
       img {
         padding-right: 10px;
@@ -34,6 +57,16 @@
   form {
     max-width: 33%;
     position: relative;
+    @media #{$tablet} {
+      
+      max-width: 60%;
+    }
+    @media #{$mobile} {
+      max-width: 80%;
+      margin-top: 0;
+    }
+
+    flex-direction: column;
     label {
       font-size: 0.6875rem;
       color: $blue;
@@ -75,7 +108,7 @@
           background-color: $grey-mid;
         }
         &:after {
-          content: '';
+          content: "";
           position: absolute;
           display: none;
           left: 9px;
@@ -95,15 +128,15 @@
       border: 0;
       border-bottom: 1px solid black;
 
-      &[type='text'],
-      &[type='email'] {
+      &[type="text"],
+      &[type="email"] {
         padding: 15px 0;
         width: 100%;
       }
-      &[type='text'] {
+      &[type="text"] {
         margin-bottom: 43px;
       }
-      &[type='email'] {
+      &[type="email"] {
         margin-bottom: 30px;
       }
 
@@ -113,15 +146,15 @@
     }
   }
   .send-button {
-    @include button(97px, 20px, $blue, 35px);
+    @include button(6rem, 20px, $blue, 35px);
     @include action-button(#07ace629);
     color: $white;
     font-size: 0.8125rem;
     font-family: $secondary-font;
     font-weight: bold;
-    line-height: 18px;
-    position: relative;
-    top: 20px;
-    left: 50%;
+    margin-top: 2rem;
+    @media #{$tablet} {
+      margin-left: 2rem;
+    }
   }
 }
