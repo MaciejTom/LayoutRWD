@@ -1,3 +1,8 @@
 # Layout RWD
 
- An example layout of a store website
+ An example responsive layout of a store website.
+
+ ## Technologies:
+
+ - JavaScript
+ - Sass

@@ -3,10 +3,10 @@
   justify-content: center;
   margin-bottom: 5rem;
   @media #{$tablet} {
-    flex-direction: column;
-    align-items: center;
-    transform: scale(1.1);
-    margin-top: 2rem;
+     flex-direction: column;
+     align-items: center;
+
+     margin-top: 2rem;
   }
   @media #{$mobile} {
     transform: scale(1);
@@ -55,13 +55,13 @@
     }
   }
   form {
-    max-width: 33%;
+    max-width: 45%;
     position: relative;
     @media #{$tablet} {
-      max-width: 60%;
+      max-width: 50%;
     }
     @media #{$mobile} {
-      max-width: 80%;
+      max-width: 60%;
       margin-top: 0;
     }
 
@@ -155,7 +155,7 @@
     font-weight: bold;
     margin-top: 2rem;
     @media #{$tablet} {
-      margin-left: 2rem;
+      // margin-left: 2rem;
     }
   }
 }

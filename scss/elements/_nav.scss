@@ -35,6 +35,9 @@
         li {
           padding: 1.7rem 4rem 1.7rem 0;
           text-transform: uppercase;
+          @media #{$tablet} {
+            padding: 1.7rem 3rem 1.7rem 0;
+          }
           &:last-child {
             padding-right: 0;
           }
@@ -48,6 +51,9 @@
             padding-bottom: 1.5rem;
             padding-right: 0.625rem;
             padding-left: 0.625rem;
+            @media #{$tablet} {
+              font-size: 0.9rem;
+            }
             &:hover {
               color: $black;
               outline: none;
